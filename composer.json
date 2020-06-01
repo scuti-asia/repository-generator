@@ -1,0 +1,23 @@
+{
+    "name": "scuti/repository-generator",
+    "description": "Package allow us to create Repository layer",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hoai Nam",
+            "email": "namdhgc@gmail.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Scuti\\Admin\\RepositoryGenerator\\AdminServiceProvider"
+            ],
+            "aliases": {
+                "ScutiRepositoryGenerator": "Scuti\\Admin\\RepositoryGenerator\\AdminServiceProvider"
+            }
+        }
+    }
+}

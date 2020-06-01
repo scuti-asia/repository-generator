@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Repositories;
+
+/**
+* Class EloquentRepository
+* @package App\Repositories
+*/
+
+abstract class EloquentRepository implements RepositoryInterface
+{
+
+}

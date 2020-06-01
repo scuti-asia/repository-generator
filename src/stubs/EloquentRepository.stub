@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Repositories\{{modelName}}Repository;
+
+use App\Models\{{modelName}};
+use App\Repositories\EloquentRepository;
+
+/**
+ * Class {{modelName}}EloquentRepository.
+ */
+class {{modelName}}EloquentRepository extends EloquentRepository implements {{modelName}}RepositoryInterface
+{
+
+}
