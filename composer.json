@@ -19,5 +19,6 @@
                 "ScutiRepositoryGenerator": "Scuti\\Admin\\RepositoryGenerator\\AdminServiceProvider"
             }
         }
-    }
+    },
+    "minimum-stability": "stable"
 }
