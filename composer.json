@@ -10,6 +10,11 @@
         }
     ],
     "require": {},
+    "autoload": {
+        "psr-4": {
+            "Scuti\\Admin\\RepositoryGenerator\\": "src/"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
