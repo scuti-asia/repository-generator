@@ -12,7 +12,8 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Scuti\\Admin\\RepositoryGenerator\\": "src/"
+            "Scuti\\Admin\\RepositoryGenerator\\": "src/",
+            "Scuti\\Admin\\RepositoryGenerator\\Commands\\": "src/commands/"
         }
     },
     "extra": {

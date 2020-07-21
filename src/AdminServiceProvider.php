@@ -1,8 +1,9 @@
 <?php
 
-namespace Scuti\Admin\RepositoryRegenator;
+namespace Scuti\Admin\RepositoryGenerator;
 
 use Illuminate\Support\ServiceProvider;
+use Scuti\Admin\RepositoryGenerator\Commands\RepositoryGenerator;
 
 class AdminServiceProvider extends ServiceProvider
 {
@@ -23,9 +24,10 @@ class AdminServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->publishes([
-            __DIR__.'/commands' => base_path('app/Console/Commands/'),
-            __DIR__.'/stubs' => base_path('resources/stubs/'),
-        ], "repositiry-generator");
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                RepositoryGenerator::class
+            ]);
+        }
     }
 }
