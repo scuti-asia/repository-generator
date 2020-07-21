@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands;
+namespace Scuti\Admin\RepositoryGenerator\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
