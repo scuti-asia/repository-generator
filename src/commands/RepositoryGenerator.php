@@ -4,6 +4,7 @@ namespace Scuti\Admin\RepositoryGenerator\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 
 class RepositoryGenerator extends Command
 {
@@ -54,7 +55,7 @@ class RepositoryGenerator extends Command
 
         File::append(
             base_path('routes/api.php'),
-            'Route::resource(\'' . str_plural(strtolower($name)) . "', '{$name}Controller');"
+            'Route::resource(\'' . Str::plural(strtolower($name)) . "', '{$name}Controller');"
         );
     }
 
@@ -88,7 +89,7 @@ class RepositoryGenerator extends Command
             ],
             [
                 $name,
-                strtolower(str_plural($name)),
+                strtolower(Str::plural($name)),
                 strtolower($name)
             ],
             $this->getStub('Controller')
